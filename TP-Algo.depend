@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1612954987 source:c:\users\render\documents\algo\tp-algo\main.cpp
+	<iostream>
+	"Zombie.h"
+	"ZombieBOOM.h"
+
+1612955012 c:\users\render\documents\algo\tp-algo\include\zombie.h
+	<string>
+	<iostream>
+	<random>
+	<ctime>
+	<stdlib.h>
+
+1612955632 source:c:\users\render\documents\algo\tp-algo\src\zombie.cpp
+	"Zombie.h"
+
+1612955641 source:c:\users\render\documents\algo\tp-algo\src\zombieboom.cpp
+	"ZombieBOOM.h"
+
+1612955205 c:\users\render\documents\algo\tp-algo\include\zombieboom.h
+	<string>
+	<iostream>
+	<random>
+	<ctime>
+	<stdlib.h>
+

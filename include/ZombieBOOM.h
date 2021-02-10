@@ -1,5 +1,5 @@
-#ifndef ZOMBIE_H
-#define ZOMBIE_H
+#ifndef ZOMBIEBOOM_H
+#define ZOMBIEBOOM_H
 
 #include <string>
 #include <iostream>
@@ -9,24 +9,24 @@
 
 using namespace std;
 
-class Zombie
+class ZombieBOOM
 {
-
-private:
+    private:
 	int pv = 100;
-	string nom = "Thierry";
-	int attack = 11;
+	string nom = "Boomy";
+	int attack = 20;
 	int defense = 0;
+	int explosion = 60;
 
 public:
     //CONSTRUCTEURS
-    Zombie();
-    Zombie(int p, int a, int d);
-    Zombie(string n);
+    ZombieBOOM();
+    ZombieBOOM(int p, int a, int d, int e);
+    ZombieBOOM(string n);
 
 
     //DESTRUCTEUR
-    ~Zombie();
+    ~ZombieBOOM();
 
     //GETTER/SETTER PV
 	int getPv() const;
@@ -44,9 +44,14 @@ public:
 	int getDefense() const;
 	void setDefense(int d);
 
+	//GETTER/SETTER EXPLOSION
+	int getExplosion() const;
+	void setExplosion(int e);
+
+
 	//AFFICHE LES INFOS DU PERSO
 	void showInfos() const;
 
 };
 
-#endif // ZOMBIE_H
+#endif // ZOMBIEBOOM_H

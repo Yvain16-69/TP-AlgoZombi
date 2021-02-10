@@ -2,15 +2,15 @@
 
 Zombie::Zombie(){
     pv = 100;
-    nom = "Henri";
-    attack = 10;
+    nom = "Thierry";
+    attack = 11;
     defense = 0;
 
 }
 
 Zombie::Zombie(int p,int a, int d){
     pv = p;
-    atack = a;
+    attack = a;
     defense = d;
 }
 
@@ -19,7 +19,7 @@ Zombie::Zombie(string n){
 }
 
 Zombie::~Zombie(){
-    cout<<"Le zombie a été détruit"<<endl;
+   cout<<"Thierry a ete detruit"<<endl;
 }
 
 int Zombie::getPv() const
@@ -29,8 +29,8 @@ int Zombie::getPv() const
 
 
 void Zombie::setPv(int p) {
-	  if (p > 100 || s < 0) {
-		      cerr << "Zombie détruit" << endl;
+	  if (p > 100 || p < 0) {
+		      cerr << "Zombie cree" << endl;
 		      pv = 0;
 	  }
       else {
@@ -56,7 +56,7 @@ int Zombie::getAttack() const
 void Zombie::setAttack(int a)
 {
 	if (a > 10) {
-            cerr << "Zombie détruit" << endl;
+            cerr << "Zombie detruit" << endl;
 		    pv = 0;
 	}
 	else {
